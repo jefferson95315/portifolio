@@ -1,0 +1,103 @@
+header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+   
+}
+
+header h2 {
+    text-align: left;
+    padding-top: 50px;
+}
+
+body {
+    flex: 1; /* Ocupa o restante do espaço */
+    padding-left: 280px; /* Espaçamento interno */
+    background-color: #f0ebeb; /* Fundo claro */
+    overflow-y: auto; /* Permite rolagem vertical */
+    box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+    background-image: url("../portifolio5/serra_do_roncador.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+
+.icone {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.barra-lateral {
+    height: 100vh; /* Altura total da tela */
+    width: 29vh; /* Largura da barra */
+    background-color: #000000c9; /* Cor preta */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff; /* Texto branco */
+    position: fixed; /* Fixa no lado esquerdo da tela */
+    top: 0; /* Começa do topo */
+    left: 0; /* Alinhada à esquerda */
+    display: flex; /* Ativa flexbox para organizar itens */
+    flex-direction: column; /* Alinha itens verticalmente */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.barra-lateral a:hover { /*caixa Git hub*/
+    transform: translateZ(8px);
+    transition: 300ms;
+    color:#ffffff;
+    padding-left: 10px;
+}
+
+.barra-lateral span { /*palavra "Git hub"*/
+    padding: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.imagem {
+    height: 98%;
+    width: 98%;
+    object-fit: cover;
+    padding-top: 2px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-radius: 10px;
+}
+
+.quadrado {
+    background: #00e9e5;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    border-radius: 10px;
+    height: 4cm;
+    width: 5cm;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.quadrado:hover {
+    transform: translateY(-8px);
+    box-shadow: 10px 10px rgb(255, 0, 0);
+}
+
+    
