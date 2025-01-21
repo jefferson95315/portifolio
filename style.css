@@ -1,28 +1,33 @@
 header{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Arial Narrow Bold', sans-serif;
     color: #fff;
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
-   
+}
+header h1 {
+     background-color: #00000079;
+     border-radius: 10px;
 }
 
 header h2 {
     text-align: left;
-    padding-top: 50px;
+    padding-left: 3px;
+    background-color: #00000079;
+    border-radius: 10px;
+    width: 150px;
+    
 }
 
 body {
     flex: 1; /* Ocupa o restante do espaço */
     padding-left: 280px; /* Espaçamento interno */
-    background-color: #f0ebeb; /* Fundo claro */
     overflow-y: auto; /* Permite rolagem vertical */
     box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
-    background-image: url("../portifolio5/serra_do_roncador.png");
+    background-image: url("../portifolio/serra_do_roncador.png");
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #f0f0f0;
-    min-height: 100vh;
 }
 
 .icone {
@@ -40,7 +45,7 @@ body {
 .barra-lateral {
     height: 100vh; /* Altura total da tela */
     width: 29vh; /* Largura da barra */
-    background-color: #000000c9; /* Cor preta */
+    background-color: #0f151fc5; /* Cor preta */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fff; /* Texto branco */
     position: fixed; /* Fixa no lado esquerdo da tela */
@@ -74,9 +79,9 @@ body {
 
 .imagem {
     height: 98%;
-    width: 98%;
+    width: 99%;
     object-fit: cover;
-    padding-top: 2px;
+    padding-top: 1px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
@@ -84,13 +89,13 @@ body {
 }
 
 .quadrado {
-    background: #00e9e5;
+    background: #00e9e5f6;
     color: white;
     text-align: center;
     padding: 0px;
     border-radius: 10px;
-    height: 4cm;
-    width: 5cm;
+    height: 140px;
+    width: 190px;
     overflow: hidden;
     transition: 300ms;
 }
