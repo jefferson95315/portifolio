@@ -5,14 +5,18 @@ header{
     text-align: center; /* Centraliza o texto */
 }
 header h1 {
-     background-color: #00000079;
+     text-shadow: 1px 0px 4px rgb(0, 0, 0);
+     background-color: #ffffff75;
      border-radius: 10px;
+     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.751);
 }
 
 header h2 {
+    text-shadow: 1px 0px 4px rgb(0, 0, 0);
     text-align: left;
     padding-left: 3px;
-    background-color: #00000079;
+    background-color: #ffffff75;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.751);
     border-radius: 10px;
     width: 150px;
     
@@ -23,7 +27,7 @@ body {
     padding-left: 280px; /* Espaçamento interno */
     overflow-y: auto; /* Permite rolagem vertical */
     box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
-    background-image: url("../portifolio/serra_do_roncador.png");
+    background-image: url("./serra_do_roncador.png");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -31,6 +35,7 @@ body {
 }
 
 .icone {
+    filter: contrast(300%);
     height: 80px;
     width: 80px;
     display: flex;
@@ -40,12 +45,14 @@ body {
     color: white;
     margin-top: 5px;
     text-align: center;
+    padding-left: 41px;
 }
 
 .barra-lateral {
+    text-shadow: 1px 0px 4px rgb(0, 0, 0);
     height: 100vh; /* Altura total da tela */
-    width: 29vh; /* Largura da barra */
-    background-color: #0f151fc5; /* Cor preta */
+    width: 25vh; /* Largura da barra */
+    background-color: #ffffff75; /* Cor preta */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fff; /* Texto branco */
     position: fixed; /* Fixa no lado esquerdo da tela */
@@ -65,7 +72,8 @@ body {
 }
 
 .barra-lateral span { /*palavra "Git hub"*/
-    padding: 15px;
+    padding: 55px;
+    color: #ffffff;
 }
 
 .grid-container {
@@ -84,7 +92,6 @@ body {
     padding-top: 1px;
     padding-right: 0px;
     padding-bottom: 0px;
-    padding-left: 0px;
     border-radius: 10px;
 }
 
@@ -102,7 +109,7 @@ body {
 
 .quadrado:hover {
     transform: translateY(-8px);
-    box-shadow: 10px 10px rgb(255, 0, 0);
+    box-shadow: 10px 10px rgba(255, 0, 0, 0.767);
 }
 
     
