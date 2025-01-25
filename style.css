@@ -1,115 +1,118 @@
-header{
-    font-family:'Arial Narrow Bold', sans-serif;
-    color: #fff;
-    padding: 20px; /* Espaçamento interno */
+header {
     text-align: center; /* Centraliza o texto */
+    font-family: 'Arial Narrow Bold', sans-serif; /* Define a fonte para o cabeçalho */
+    color: #fff; /* Define a cor do texto como branco */
+    padding: 20px; /* Espaçamento interno */
+    
 }
+
 header h1 {
-     text-shadow: 1px 0px 4px rgb(0, 0, 0);
-     background-color: #ffffff75;
-     border-radius: 10px;
-     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.751);
+    font-size: 2.5vh; /*Deixa a fonte do texto de acordo com o tamanho da tela*/
+    text-shadow: 1px 0px 4px rgb(0, 0, 0); /* Adiciona sombra ao texto */
+    background-color: #ffffff75; /* Cor de fundo com transparência */
+    border-radius: 10px; /* Arredonda os cantos */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.751); /* Adiciona sombra ao elemento */
 }
 
 header h2 {
-    text-shadow: 1px 0px 4px rgb(0, 0, 0);
-    text-align: left;
-    padding-left: 3px;
-    background-color: #ffffff75;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.751);
-    border-radius: 10px;
-    width: 150px;
-    
+    text-shadow: 1px 0px 4px rgb(0, 0, 0); /* Adiciona sombra ao texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding-left: 3px; /* Espaçamento interno à esquerda */
+    background-color: #ffffff75; /* Cor de fundo com transparência */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.751); /* Adiciona sombra ao elemento */
+    border-radius: 10px; /* Arredonda os cantos */
+    width: 150px; /* Largura fixa */
 }
 
 body {
     flex: 1; /* Ocupa o restante do espaço */
-    padding-left: 280px; /* Espaçamento interno */
+    padding-left: 280px; /* Espaçamento interno à esquerda */
     overflow-y: auto; /* Permite rolagem vertical */
     box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
-    background-image: url("./serra_do_roncador.png");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("./images/serra_do_roncador.png"); /* Imagem de fundo */
+    background-attachment: fixed; /* Fixa a imagem durante a rolagem */
+    background-size: cover; /* Cobre todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
 }
 
 .icone {
-    filter: contrast(300%);
-    height: 80px;
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    margin-top: 5px;
-    text-align: center;
-    padding-left: 41px;
+    filter: contrast(300%); /* Aumenta o contraste da imagem */
+    height: 80px; /* Altura do ícone */
+    width: 80px; /* Largura do ícone */
+    display: flex; /* Usa flexbox para alinhar conteúdo */
+    flex-direction: column; /* Alinha itens verticalmente */
+    align-items: center; /* Centraliza itens horizontalmente */
+    text-decoration: none; /* Remove sublinhado de links */
+    color: white; /* Cor do texto */
+    margin-top: 5px; /* Margem superior */
+    text-align: center; /* Centraliza o texto */
+    padding-left: 41px; /* Espaçamento interno à esquerda */
 }
 
 .barra-lateral {
-    text-shadow: 1px 0px 4px rgb(0, 0, 0);
+    text-shadow: 1px 0px 4px rgb(0, 0, 0); /* Adiciona sombra ao texto */
     height: 100vh; /* Altura total da tela */
     width: 25vh; /* Largura da barra */
-    background-color: #ffffff75; /* Cor preta */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #fff; /* Texto branco */
+    background-color: #ffffff75; /* Cor de fundo com transparência */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Define a fonte */
+    color: #fff; /* Cor do texto */
     position: fixed; /* Fixa no lado esquerdo da tela */
-    top: 0; /* Começa do topo */
-    left: 0; /* Alinhada à esquerda */
-    display: flex; /* Ativa flexbox para organizar itens */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    display: flex; /* Usa flexbox para alinhar conteúdo */
     flex-direction: column; /* Alinha itens verticalmente */
     padding: 20px; /* Espaçamento interno */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra à barra */
 }
 
-.barra-lateral a:hover { /*caixa Git hub*/
-    transform: translateZ(8px);
-    transition: 300ms;
-    color:#ffffff;
-    padding-left: 10px;
+.barra-lateral a:hover {
+    transform: translateZ(8px); /* Move o elemento no eixo Z */
+    transition: 300ms; /* Transição suave */
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+    padding-left: 10px; /* Espaçamento interno à esquerda */
 }
 
-.barra-lateral span { /*palavra "Git hub"*/
-    padding: 55px;
-    color: #ffffff;
+.barra-lateral span {
+    padding: 55px; /* Espaçamento interno */
+    color: #ffffff; /* Cor do texto */
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
+    display: grid; /* Define um contêiner de grade */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colunas responsivas */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 1200px; /* Largura máxima */
+    margin: auto; /* Centraliza o contêiner */
 }
 
 .imagem {
-    height: 98%;
-    width: 99%;
-    object-fit: cover;
-    padding-top: 1px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    border-radius: 10px;
+    height: 98%; /* Altura da imagem */
+    width: 99%; /* Largura da imagem */
+    object-fit: cover; /* Cobre o contêiner sem distorção */
+    padding-top: 1px; /* Espaçamento superior */
+    padding-right: 0px; /* Espaçamento à direita */
+    padding-bottom: 0px; /* Espaçamento inferior */
+    border-radius: 10px; /* Arredonda os cantos */
 }
 
 .quadrado {
-    background: #00e9e5f6;
-    color: white;
-    text-align: center;
-    padding: 0px;
-    border-radius: 10px;
-    height: 140px;
-    width: 190px;
-    overflow: hidden;
-    transition: 300ms;
+    background: #00e9e5f6; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 0px; /* Espaçamento interno */
+    border-radius: 10px; /* Arredonda os cantos */
+    height: 140px; /* Altura do quadrado */
+    width: 190px; /* Largura do quadrado */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa */
+    transition: 300ms; /* Transição suave */
 }
 
 .quadrado:hover {
-    transform: translateY(-8px);
-    box-shadow: 10px 10px rgba(255, 0, 0, 0.767);
+    transform: translateY(-8px); /* Move o elemento para cima */
+    box-shadow: 10px 10px rgba(255, 0, 0, 0.767); /* Adiciona sombra ao passar o mouse */
 }
+
 
     
